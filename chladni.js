@@ -58,6 +58,18 @@ class Chladni {
         this.pulse = Math.round (Math.random())
         this.color = Math.round (Math.random())
         this.mouseAB = Math.round (Math.random())
+        
+        const r1 = Math.random()
+        if (r1 > 0.7)
+            this.zoom *= 1 + Math.random() * 1.5
+        else if (r1 > 0.4)
+            this.zoom /= 1 + Math.random() * 1.5
+
+        const r2 = Math.random()
+        if (r2 > 0.7)
+            this.threshAmp *= 1 + Math.random() * 1.5
+        else if (r2 > 0.4)
+            this.threshAmp /= 1 + Math.random() * 1.5
     }
 
 
