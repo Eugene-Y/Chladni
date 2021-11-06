@@ -120,7 +120,7 @@
         ty += ts
         p.text("← →  - thickness:  " + p.numToStr(c.threshAmp), tx, ty)
         ty += ts
-        p.text("2x click - reset everything", tx, ty)
+        p.text("2x click - reset & randomize", tx, ty)
         ty += 2 * ts
 
         p.pop()
@@ -193,6 +193,7 @@
         //console.log("doubleClicked", p.mouseX, p.mouseY)
         p.loop()
         p.chladni.reset()
+        p.chladni.randomizePatternViewParams()
       }
       
       p.mouseClicked = function() {

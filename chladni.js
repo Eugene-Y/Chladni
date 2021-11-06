@@ -19,7 +19,8 @@ class Chladni {
         this.mX0 = 0
         this.mY0 = 0
         this.patternSize = patternSize
-        this.reset();
+        this.reset()
+        this.randomizePatternViewParams()
     }
 
 
@@ -46,6 +47,17 @@ class Chladni {
         this.mouseAB = true
         this.dx = 0
         this.dy = 0
+    }
+
+
+    randomizePatternViewParams () {
+        this.curved = Math.round (Math.random())
+        this.bent = Math.round (Math.random())
+        this.granules = Math.round (Math.random())
+        this.exp = Math.round (Math.random())
+        this.pulse = Math.round (Math.random())
+        this.color = Math.round (Math.random())
+        this.mouseAB = Math.round (Math.random())
     }
 
 
